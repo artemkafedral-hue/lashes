@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lash & Brow Studio</title>
+    <!-- Подключаем премиальный шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf9;
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a894;
+            --accent-hover: #b39682;
+            --card-bg: #ffffff;
+            --text-muted: #8c8682;
+            --border: #eae5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.7;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка сайта */
+        header {
+            max-width: 600px;
+            margin: 60px auto 30px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+        }
+
+        .logo span {
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+        }
+
+        /* Главный контейнер */
+        .wrapper {
+            max-width: 450px;
+            width: 100%;
+            margin: 0 auto 60px;
+            background: var(--card-bg);
+            padding: 50px 35px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 15px 40px rgba(197, 168, 148, 0.06);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        /* Стильная кнопка записи */
+        .btn-book {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-book:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(197, 168, 148, 0.2);
+        }
+
+        .footer-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 25px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Studio<span>Lashes</span></div>
+        <div class="subtitle">Przedłużanie i stylizacja rzęs</div>
+    </header>
+
+    <div class="wrapper">
+        <h2>Rezerwacja online</h2>
+        <div class="description">Wybierz odpowiedni dla siebie dzień oraz godzinę w naszym systemie rezerwacji.</div>
+        
+        <!-- Кнопка, которая напрямую открывает твою рабочую ссылку без блокировок -->
+        <a href="https://calendar.app.google/HxswcjjXnUzHZptW6" target="_blank" class="btn-book">Zarezerwuj wizytę</a>
+        
+        <div class="footer-note">Zajęte terminy znikają automatycznie.</div>
+    </div>
+
+</body>
+</html>
